@@ -1,12 +1,15 @@
 
 import win32com.client as wc # 将doc转化位docx
-
+import os
 
 class Convertor(object):
     def __init__(self):
         pass
 
     def doc2docx(self, doc_path: str, docx_path: str):
+        if os.path.exists(docx_path) == True: # 如果文件已存在无需转换
+            print('文件以存在')
+            return 
         # doc文件另存为docx
         word = wc.Dispatch("Word.Application")
         doc = word.Documents.Open(doc_path)
