@@ -3,10 +3,6 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-docx文件
-doc文件
-存入.xlsx
-取出.xlsx
 
 # C extensions
 *.so

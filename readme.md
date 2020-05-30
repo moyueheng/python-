@@ -4,7 +4,7 @@ win10
 
 命令行敲入：
 
-``pip install -r requirements.txt``
+``pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt``
 
 # 使用：
 
